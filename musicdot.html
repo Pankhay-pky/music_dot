@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>MusicDot | Sobre a empresa</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    
+
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -23,12 +23,15 @@
         .titulo-principal {
             color: #3D3D3D;
             background-color: #E1EDF2;
-            padding: 10px;
+            padding: 8px;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-bottom: 15px;
         }
 
         h2:not(.titulo-principal) {
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 5px;
+            border-bottom: solid;
+            font-weight: bold;
         }
 
         figure {
@@ -42,7 +45,6 @@
 
         figcaption {
             margin-top: 10px;
-            color: lightgrey;
         }
 
         figure.matriz figcaption,
@@ -66,6 +68,51 @@
             margin: 30px 0 20px 20px;
         }
 
+        section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            gap: 20px;
+        }
+
+        section article {
+            width: 48%;
+        }
+
+        h3 {
+            font-size: 1em;
+            margin-bottom: 3px;
+        }
+
+        h3 small {
+            font-weight: normal;
+            color: #555;
+            font-size: 0.85em;
+        }
+
+        address {
+            font-style: italic;
+            line-height: 1.4;
+            margin-top: 3px;
+            font-size: 0.95em;
+        }
+
+        p {
+            line-height: 1.4;
+            margin: 3px 0;
+            font-size: 0.95em;
+        }
+
+        a {
+            color: #0645AD;
+            text-decoration: none;
+            font-size: 0.95em;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
         .logo img {
             max-width: 200px;
             margin-bottom: 20px;
@@ -84,7 +131,7 @@
 
         <p>A MusicDot é a maior escola online de música em todo o mundo. Fundada em 1932, possui estúdios em 124 países, sendo líder de mercado com mais de 90% de participação em 118 deles.</p>
 
-        <p>Nossa matriz fica em <a href="https://maps.google.com.br/?q=190,GabrielDequech,Mafra,SC" target="_blank">Mafra, em Santa Catarina</a>. De lá saem grande parte das gravações de nossos cursos.</p>
+        <p>Nossa matriz fica em <a href="https://maps.google.com.br/?q=190,GabrielDequech,Mafra,SC" target="_blank">Mafra, em Santa Catarina</a>. De lá saem grande parte das gravações de nossos cursos. Nossa matriz:</p>
 
         <figure class="matriz">
             <img src="img/matriz-musicdot.png" alt="Foto da matriz da MusicDot">
@@ -93,7 +140,8 @@
 
         <p>
             Assine os cursos da MusicDot. Acesse <a href="index.html">nosso site</a> ou entre em contato se tiver dúvidas.
-            Conheça também <a href="#historia">nossa história</a> e <a href="#diferenciais">nossos diferenciais</a>.
+            Conheça também <a href="sobre.html#historia">nossa história</a> e
+            <a href="sobre.html#diferenciais">nossos diferenciais</a>.
         </p>
 
         <h2 id="historia">História</h2>
@@ -119,16 +167,33 @@
         <ul>
             <li>Menor preço do mercado, garantido</li>
             <li>Se você achar um serviço mais barato, leva 1 mês de graça</li>
-            <li>Pague em reais, dólares, euros, libras, dogecoins, litecoins ou bitcoins</li>
+            <li>Pague em reais, dólares, euros, libras, dodgecoins, litecoins ou bitcoins</li>
             <li>Todas as compras acompanham acesso à Alura</li>
             <li>Maior escola de música online do mundo</li>
-            <li>Atendimento via telefone, email, chat, Twitter, Facebook, Instagram, ICQ, WhatsApp, SMS, carta, fax, sinal de fumaça e telegrama</li>
+            <li>Atendimento via telefone, email, chat, twitter, facebook, instagram, ICQ, WhatsApp, SMS, carta, fax, sinal de fumaça e telegrama</li>
             <li>Presente em 124 países</li>
             <li>Mais de um milhão de funcionários em todo o mundo</li>
         </ul>
 
         <h2 class="titulo-principal">Contato</h2>
 
+        <section>
+            <article>
+                <h3><strong>Correspondência</strong> <small>(todos os dias, das 9h às 18h)</small></h3>
+                <address>
+                    AOVS Sistemas de Informática S.A<br>
+                    Rua Vergueiro, 3185, 8º andar<br>
+                    Vila Mariana<br>
+                    São Paulo - SP
+                </address>
+            </article>
+
+            <article>
+                <h3><strong>Telefones</strong> <small>(segunda à sexta, das 9h às 18h)</small></h3>
+                <p><strong>Pessoa Física:</strong> <a href="tel:+551141183319">(11) 4118-3319</a></p>
+                <p><strong>Pessoa Jurídica:</strong> <a href="tel:+551141182172">(11) 4118-2172</a></p>
+            </article>
+        </section>
     </div>
 </body>
 
